@@ -2,9 +2,10 @@ package net.grobas.polygonimageview.sample;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import net.grobas.shapes.PaperPolygonShape;
 import net.grobas.shapes.StarPolygonShape;
@@ -17,7 +18,6 @@ public class SampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample);
 
-        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
         PolygonImageView kitty = (PolygonImageView) findViewById(R.id.kitty01);
         LinearLayout layout = (LinearLayout) findViewById(R.id.layout);

@@ -20,6 +20,7 @@ android {
 }
 
 dependencies {
-    compile project(':polygonimageview')
-    compile 'com.android.support:appcompat-v7:22.1.1'
+    def appcompat_version = "1.4.2"
+    implementation  project(':polygonimageview')
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
 }
